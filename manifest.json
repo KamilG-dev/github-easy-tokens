@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "version": "1.0",
+  "name": "github-easy-tokens",
+  "description": "Provides buttons for granting/removing all permissions for github's fine-grained personal access token",
+  "permissions": [
+    "http://www.github.com/"
+  ],
+  "content_scripts": [
+    {
+      "matches": [ "https://github.com/settings/personal-access-tokens/new"],
+      "js": [ "content.js" ]
+    }
+  ]
+}
